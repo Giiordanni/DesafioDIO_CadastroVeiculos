@@ -10,5 +10,11 @@ namespace minimal_api.Dominio.Interface
     public interface IAdministradorService
     {
         Administrador? Login(LoginDTO loginDTO);
+
+        void CadastrarAdm(Administrador adm);
+
+        List<Administrador> GetAllAdm(int? pagina);
+
+        Administrador GetById(int Id);
     }
 }
